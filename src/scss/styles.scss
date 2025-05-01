@@ -19,7 +19,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
+  color: #000000;
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -37,6 +37,12 @@ body {
 h1,
 h2 {
   font-family: var(--font-tittle);
+}
+
+h1 {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .container {
