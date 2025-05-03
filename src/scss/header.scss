@@ -1,8 +1,9 @@
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
   background-color: transparent;
   padding-top: 7px;
   z-index: 1;
@@ -10,6 +11,7 @@
 @media only screen and (min-width: 1200px) {
   .header {
     padding: 15px 0;
+    width: 1200px;
   }
 }
 .header-container {
