@@ -1,2 +1,4 @@
 import './js/burgerMenu';
-import './scss/styles.scss';
+import initSwiper from './js/atmosphere';
+
+initSwiper();
