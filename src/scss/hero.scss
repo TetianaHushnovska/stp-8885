@@ -133,6 +133,7 @@
   background-color: #fff;
   margin: 0 auto;
   padding: 7px 15px;
+  transition: all 0.3s ease;
 }
 @media only screen and (min-width: 1200px) {
   .google-play-btn {
@@ -141,6 +142,7 @@
 }
 .google-play-btn:hover {
   background-color: #ffa94d;
+  transform: scale(1.05);
 }
 
 /* #endregion */
