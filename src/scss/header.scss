@@ -6,12 +6,12 @@
   width: 320px;
   background-color: transparent;
   padding-top: 7px;
-  z-index: 1;
+  z-index: 999;
 }
 @media only screen and (min-width: 1200px) {
   .header {
-    padding: 15px 0;
     width: 1200px;
+    padding: 15px 0;
   }
 }
 .header-container {
@@ -21,53 +21,54 @@
   justify-content: space-between;
 }
 
-.nav {
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .nav {
     display: flex;
     flex-direction: row;
     gap: 83px;
     align-items: center;
   }
-  .logo {
-    display: block;
-    width: 50px;
-    height: 50px;
-  }
-  @media only screen and (min-width: 1200px) {
-    .logo {
-      width: 80px;
-      height: 80px;
-    }
-  }
-  .list {
-    display: none;
-  }
+}
+.logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
 
-  @media only screen and (min-width: 1200px) {
-    .list {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-      align-items: center;
-      justify-content: space-between;
-      border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0);
-      backdrop-filter: blur(20px);
-      height: 70px;
-    }
-    .link {
-      font-family: var(--font-text);
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 112%;
-      color: #fff;
-      padding: 7px 11px;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    .link:hover {
-      color: #ffa94d;
-    }
+@media only screen and (min-width: 1200px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+.list {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .list {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    height: 70px;
+    padding: 0 11px;
+  }
+  .link {
+    font-family: var(--font-text);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 112%;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .link:hover {
+    color: #ffa94d;
   }
 }
 
@@ -92,7 +93,7 @@
 
 .modal-menu {
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
