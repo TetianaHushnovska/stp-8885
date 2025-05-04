@@ -15,8 +15,10 @@
 }
 
 .container-cta {
+  position: relative;
   width: 320px;
   padding: 0 24px;
+  z-index: 1;
 
   @media screen and (min-width: 1200px) {
     width: 1040px;
@@ -77,14 +79,19 @@
 
 .cta-img {
   position: absolute;
-  right: -40px;
-  bottom: 0;
+  right: -167px;
+  top: -75px;
+  transform: rotate(18deg);
   width: 300px;
-  z-index: 1;
+  z-index: 0;
 
-  //   @media (max-width: 768px) {
-  //     position: static;
-  //     width: 80%;
-  //     margin-top: 20px;
-  //   }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 455px;
+    transform: rotate(0deg);
+    z-index: 0;
+    pointer-events: none;
+  }
 }
