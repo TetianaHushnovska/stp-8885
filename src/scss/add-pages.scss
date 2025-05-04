@@ -1,0 +1,126 @@
+.add-page-header {
+  padding: 100px 24px 50px 24px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    padding: 118px 80px 60px 80px;
+    width: 1200px;
+  }
+}
+
+.back-btn {
+  width: 100px;
+  height: 100px;
+  font-family: var(--font-text);
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.back-btn-img {
+  width: 7.5px;
+  height: 15.6px;
+  margin-right: 20px;
+}
+
+.block-tittle,
+.add-page-header-tittle {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 0px -2px 0 black, 0px 2px 0 black, -2px 0px 0 black,
+    2px 0px 0 black;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.add-page-header-tittle {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.block-text-bold {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.block-text,
+.footer-data {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}
+
+.add-margin {
+  margin-bottom: 0;
+}
+
+.footer-data {
+  list-style: disc;
+  padding: 0 0 0 25px;
+  margin-top: -50px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -60px;
+  }
+}
+
+.add-margin-top {
+  margin-top: 0;
+}
+
+.footer-data-item {
+  padding-left: 5px;
+}
+
+.footer-data-link {
+  color: #0462f8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.add-page-footer {
+  background-color: #e3e0f0;
+
+  @media screen and (min-width: 1200px) {
+    background-color: #ba8dfd;
+  }
+}
+
+.add-style {
+  text-decoration: underline;
+}
+
+.footer-span {
+  font-weight: 500;
+}
+
+.shown {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
