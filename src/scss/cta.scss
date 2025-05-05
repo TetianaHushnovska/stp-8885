@@ -1,5 +1,6 @@
 .cta {
   width: 320px;
+  height: 388px;
   background-color: #6d12d8;
   border-radius: 20px;
   padding: 44px 0;
@@ -9,8 +10,9 @@
 
   @media screen and (min-width: 1200px) {
     width: 1040px;
+    height: 366px;
     margin: 0 auto 120px auto;
-    padding: 54px 0 47px-;
+    padding: 54px 0 47px;
   }
 }
 
