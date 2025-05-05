@@ -1,0 +1,136 @@
+/* #region how-to-play */
+
+.play-title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 240%;
+  text-align: center;
+  height: 60px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 40px;
+    line-height: normal;
+    height: 100px;
+    margin: 0 auto;
+  }
+}
+
+.play-list {
+  display: flex;
+  flex-direction: column;
+  gap: 37.9px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 52px;
+  }
+}
+.play-item {
+  display: flex;
+
+  padding: 9.59px 4.72px 0px 3.05px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('/img/how-to-play/vecteezy-mobl@1x.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 281px;
+  height: 176px;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/how-to-play/vecteezy-mobl@2x.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex: 0 1 calc(33.33% - 13.33px);
+    width: 322.09px;
+    height: 202px;
+
+    background-image: url('/img/how-to-play/vecteezy@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('/img/how-to-play/vecteezy@2x.png');
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      flex: 0 0 322.09px;
+    }
+  }
+}
+.play-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8.72px;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+.play-item-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 90%;
+  text-align: center;
+  line-height: 140%;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 90%;
+    line-height: 140%;
+  }
+}
+.play-item-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.arrow-play {
+  background-image: url('/img/game-atmosphere/award-mini.png');
+  background-size: cover;
+  background-position: center;
+
+  width: 270.96px;
+  height: 24px;
+  margin-left: 10px;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/award-mini@2x.png');
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('/img/game-atmosphere/awards-set.png');
+    width: 520px;
+    height: 112px;
+    margin-left: 300px;
+  }
+  @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/awards-set@2x.png');
+  }
+}
+
+/* #endregion */
