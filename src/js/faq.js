@@ -1,4 +1,5 @@
 import Accordion from 'accordion-js';
+import { Autoplay } from 'swiper/modules';
 
 export default function initFaq() {
   document.addEventListener('DOMContentLoaded', function () {

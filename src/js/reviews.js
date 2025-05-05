@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 
 export default function InitReview() {
@@ -8,10 +8,14 @@ export default function InitReview() {
   const swiper = new Swiper(swiperReview, {
     direction: 'horizontal',
     loop: false,
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     slidesPerView: 'auto',
     centeredSlides: false,
     grabCursor: true,
     spaceBetween: 13,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
   });
 }
