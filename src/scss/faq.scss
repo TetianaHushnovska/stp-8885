@@ -1,10 +1,10 @@
 .faq {
   width: 320px;
-  margin: 0 auto 45px auto;
+  margin: 0 auto 50px auto;
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 120px auto;
   }
 }
 .faq-tittle {
@@ -28,7 +28,8 @@
   border-top: 1px solid #6d12d8;
 
   @media screen and (min-width: 1200px) {
-    width: 1040px;
+    width: 768px;
+    margin: 0 auto;
   }
 }
 
