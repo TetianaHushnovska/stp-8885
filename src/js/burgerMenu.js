@@ -5,15 +5,21 @@ const modalLinks = document.querySelectorAll('[data-goto]');
 
 openBtnEl.addEventListener('click', () => {
   burgerMenuEl.dataset.visible = 'open';
+  document.body.style.overflow = 'hidden';
 });
 
 closeBtnEl.addEventListener('click', () => {
   burgerMenuEl.dataset.visible = 'close';
+  document.body.style.overflow = '';
 });
 
 modalLinks.forEach(link => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+
     burgerMenuEl.dataset.visible = 'close';
+    document.body.style.overflow = '';
+
     const targetId = link.getAttribute('href');
     const targetElement = document.querySelector(targetId);
 

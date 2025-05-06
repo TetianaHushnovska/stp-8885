@@ -1,0 +1,147 @@
+.characters-title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 240%;
+  text-align: center;
+  height: 80px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 150%;
+    height: 60px;
+  }
+}
+.characters-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.characters-row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.top-row {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .characters-list {
+    gap: 33px;
+  }
+
+  .characters-row {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .top-row {
+    gap: 203px;
+    margin-bottom: 0;
+  }
+
+  .bottom-row {
+    gap: 36px;
+  }
+  .bottom-row .characters-item:nth-child(2) {
+    order: 3;
+  }
+
+  .bottom-row .characters-item:nth-child(3) {
+    order: 2;
+  }
+}
+
+.characters-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 320px;
+  height: 380px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 20px;
+    height: 400px;
+  }
+}
+
+.characters-item:hover .characters-img {
+  filter: drop-shadow(0 0 10px #6d12d8) drop-shadow(0 0 20px #6d12d8);
+  transition: filter 0.3s ease;
+}
+
+.characters-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 82px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 15px;
+    height: 77px;
+  }
+}
+.characters-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 90%;
+  text-align: center;
+}
+.characters-text {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+.characters-img {
+  margin: 0 auto;
+}
+.arrow:nth-child(2) {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .arrow:nth-child(2) {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arrow-wrapper-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .arrow-wrapper-three .arrow:nth-child(2) {
+    display: block;
+    transform: scaleX(-1);
+  }
+}
+
+.arrow {
+  background-image: url('/img/game-atmosphere/award-mini.png');
+  background-size: cover;
+  background-position: center;
+  width: 270px;
+  height: 24px;
+  margin: 0 auto;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/award-mini@2x.png');
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('/img/game-atmosphere/awards-set.png');
+    width: 520px;
+    height: 112px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/awards-set@2x.png');
+  }
+}

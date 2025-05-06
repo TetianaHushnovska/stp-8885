@@ -124,11 +124,10 @@
   }
 }
 .about-img-two {
-  width: 320.19px;
+  width: 320px;
   height: 123.2px;
 
   @media screen and (min-width: 1200px) {
-    border-radius: 20px;
     width: 670px;
     height: 258px;
   }
@@ -169,6 +168,16 @@
   .arrow-wrapper-three .arrow:nth-child(2) {
     display: block;
     transform: scaleX(-1);
+  }
+}
+
+.des-br::after {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    content: '\A';
+    white-space: pre;
+    display: inline;
   }
 }
 
