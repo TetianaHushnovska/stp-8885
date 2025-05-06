@@ -1,0 +1,112 @@
+.made-title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 240%;
+  text-align: center;
+  height: 60px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 30px;
+    justify-items: center;
+  }
+}
+.features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 180px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 20px;
+    height: 166x;
+  }
+}
+.feature-card-img {
+  width: 64px;
+  height: 64px;
+}
+.features-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 272px;
+  height: 74px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    gap: 20px;
+    width: 325px;
+    height: 60px;
+  }
+}
+.feature-card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 90%;
+  text-align: center;
+}
+.feature-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144%;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.mobile-br::after {
+  content: '\A';
+  white-space: pre;
+  display: inline;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.arrow-play {
+  background-image: url('/img/game-atmosphere/award-mini.png');
+  background-size: cover;
+  background-position: center;
+
+  width: 270.96px;
+  height: 24px;
+  margin-left: 10px;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/award-mini@2x.png');
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('/img/game-atmosphere/awards-set.png');
+    width: 520px;
+    height: 112px;
+    margin-left: 300px;
+  }
+  @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+    background-image: url('/img/game-atmosphere/awards-set@2x.png');
+  }
+}
