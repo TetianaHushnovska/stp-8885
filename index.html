@@ -27,7 +27,7 @@
     <script type="module" crossorigin src="/stp-8885/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/stp-8885/assets/vendor-39c1eaad.js">
     <link rel="stylesheet" href="/stp-8885/assets/vendor-1f9fe898.css">
-    <link rel="stylesheet" href="/stp-8885/assets/styles-af55b6c1.css">
+    <link rel="stylesheet" href="/stp-8885/assets/styles-57a9487c.css">
   </head>
 
   <body>
@@ -225,14 +225,21 @@
     </ul>
   </div>
   <div class="about-wrapper-two">
-    <img
-      class="about-img-two"
-      src="/stp-8885/assets/e6ab11cc@1x-bebb9f39.jpg"
-      srcset="/stp-8885/assets/e6ab11cc@1x-bebb9f39.jpg 1x, /stp-8885/assets/e6ab11cc@2x-9e6e993e.jpg 2x"
-      alt="Wacky Battles"
-      width="670"
-      height="258"
-    />
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="/stp-8885/assets/door@des1x-b2017c81.png 1x, /stp-8885/assets/door@des2x-a9b5eb05.png 2x"
+      />
+
+      <img
+        class="about-img-two"
+        src="/img/about/door@mob1x.png 1x"
+        srcset="/stp-8885/assets/door@mob1x-8988a1c1.png 1x, /stp-8885/assets/door@mob2x-ae16ab7f.png 1x 2x"
+        alt="Wacky Battles"
+        width="670"
+        height="258"
+      />
+    </picture>
     <p class="about-text-two">
       With twists at every corner, your journey through Wacky Battles will keep
       you hooked and laughing as you fight for glory in the land <br />
