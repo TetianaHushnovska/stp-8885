@@ -68,6 +68,12 @@
     height: 400px;
   }
 }
+
+.characters-item:hover .characters-img {
+  filter: drop-shadow(0 0 10px #6d12d8) drop-shadow(0 0 20px #6d12d8);
+  transition: filter 0.3s ease;
+}
+
 .characters-text-container {
   display: flex;
   flex-direction: column;
