@@ -171,6 +171,16 @@
   }
 }
 
+.des-br::after {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    content: '\A';
+    white-space: pre;
+    display: inline;
+  }
+}
+
 .arrow {
   background-image: url('/img/game-atmosphere/award-mini.png');
   background-size: cover;
