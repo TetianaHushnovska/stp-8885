@@ -17,5 +17,7 @@ export default function initSwiper() {
     },
     slidesPerView: 1,
     spaceBetween: 20,
+    lazyPreloadPrevNext: 0,
+    speed: 800,
   });
 }

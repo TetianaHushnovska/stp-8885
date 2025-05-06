@@ -4,7 +4,7 @@ import { Autoplay } from 'swiper/modules';
 export default function initFaq() {
   document.addEventListener('DOMContentLoaded', function () {
     new Accordion('[data-accordion]', {
-      duration: 400,
+      duration: 600,
       showMultiple: true,
       openOnInit: [0],
       elementClass: 'data-item',
