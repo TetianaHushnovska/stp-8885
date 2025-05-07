@@ -27,14 +27,14 @@
     <script type="module" crossorigin src="/stp-8885/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/stp-8885/assets/vendor-08fbec2f.js">
     <link rel="stylesheet" href="/stp-8885/assets/vendor-bfdb2e1b.css">
-    <link rel="stylesheet" href="/stp-8885/assets/styles-7e6417cd.css">
+    <link rel="stylesheet" href="/stp-8885/assets/styles-a33a6773.css">
   </head>
 
   <body>
     <!--Header-->
 <header class="header">
   <div class="header-container container">
-    <nav class="nav">
+    <div class="header-bg" data-header-bg>
       <a class="logo" href="./index.html">
         <img
           class="logo-img"
@@ -45,7 +45,17 @@
           height="80"
         />
       </a>
-
+      <button class="burger-btn" type="button" data-action="open">
+        <img
+          class="burger-btn-img"
+          src="/stp-8885/img/header/Vector.png"
+          alt="Menu icon"
+          width="37"
+          height="25"
+        />
+      </button>
+    </div>
+    <nav class="nav">
       <ul class="list">
         <li class="item">
           <a class="link" href="#about">About the Game</a>
@@ -68,16 +78,6 @@
         <li class="item"><a class="link" href="#faq">FAQ</a></li>
       </ul>
     </nav>
-
-    <button class="burger-btn" type="button" data-action="open">
-      <img
-        class="burger-btn-img"
-        src="/stp-8885/img/header/Vector.png"
-        alt="Menu icon"
-        width="37"
-        height="25"
-      />
-    </button>
   </div>
 </header>
 <!--Modal-menu-->
@@ -125,7 +125,7 @@
 </div>
 
     <!--Hero-->
-<section class="home" id="home">
+<section class="home" id="home" data-hero>
   <video autoplay muted loop playsinline class="home-video">
     <source src="/stp-8885/video/Fantasy.mp4" type="video/mp4" />
     Your browser does not support the video tag.
@@ -224,30 +224,30 @@
         </p>
       </li>
     </ul>
-  </div>
-  <div class="about-wrapper-two">
-    <picture>
-      <source
-        media="(min-width: 1200px)"
-        srcset="/stp-8885/assets/door@des1x-b2017c81.png 1x, /stp-8885/assets/door@des2x-a9b5eb05.png 2x"
-      />
 
-      <img
-        class="about-img-two"
-        src="/img/about/door@mob1x.png 1x"
-        srcset="/stp-8885/assets/door@mob1x-8988a1c1.png 1x, /stp-8885/assets/door@mob2x-ae16ab7f.png 1x 2x"
-        alt="Wacky Battles"
-        width="670"
-        height="258"
-      />
-    </picture>
-    <p class="about-text-two">
-      With twists at every corner, your journey through Wacky Battles will keep
-      you hooked and laughing as you fight for glory in the land <br />
-      of enchantment!
-    </p>
-  </div>
-  <div class="container">
+    <div class="about-wrapper-two">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="/stp-8885/assets/door@des1x-b2017c81.png 1x, /stp-8885/assets/door@des2x-a9b5eb05.png 2x"
+        />
+
+        <img
+          class="about-img-two"
+          src="/img/about/door@mob1x.png 1x"
+          srcset="/stp-8885/assets/door@mob1x-8988a1c1.png 1x, /stp-8885/assets/door@mob2x-ae16ab7f.png 2x"
+          alt="Wacky Battles"
+          width="670"
+          height="258"
+        />
+      </picture>
+      <p class="about-text-two">
+        With twists at every corner, your journey through Wacky Battles will
+        keep you hooked and laughing as you fight for glory in the land <br />
+        of enchantment!
+      </p>
+    </div>
+
     <div class="arrow-wrapper-three">
       <div class="arrow"></div>
       <div class="arrow"></div>
@@ -437,11 +437,8 @@
           </div>
           <img
             class="characters-img"
-            src="/stp-8885/assets/Group 13@1x-fd9b66aa.png"
-            srcset="
-            /img/characters/Group 13@1x.png 1x,
-            /img/characters/Group 13@2x.png 2x
-          "
+            src="/stp-8885/assets/group13@1x-fd9b66aa.png"
+            srcset="/stp-8885/assets/group13@1x-fd9b66aa.png 1x, /stp-8885/assets/group13@1x-fd9b66aa.png 2x"
             alt="Twinkleblade"
             width="195"
             height="274"
@@ -457,11 +454,8 @@
           </div>
           <img
             class="characters-img"
-            src="/stp-8885/assets/Group 14@1x-8f811afd.png"
-            srcset="
-            /img/characters/Group 14@1x.png 1x,
-            /img/characters/Group 14@2x.png 2x
-          "
+            src="/stp-8885/assets/group14@1x-8f811afd.png"
+            srcset="/stp-8885/assets/group14@1x-8f811afd.png 1x, /stp-8885/assets/group14@1x-8f811afd.png 2x"
             alt="Queen Snorella"
             width="180"
             height="303.39"
@@ -479,11 +473,8 @@
           </div>
           <img
             class="characters-img"
-            src="/stp-8885/assets/Group 16@1x-720f4c4e.png"
-            srcset="
-            /img/characters/Group 16@1x.png 1x,
-            /img/characters/Group 16@2x.png 2x
-          "
+            src="/stp-8885/assets/group16@1x-720f4c4e.png"
+            srcset="/stp-8885/assets/group16@1x-720f4c4e.png 1x, /stp-8885/assets/group16@2x-95357605.png 2x"
             alt="Grillbert the Dragon Chef"
             width="219.88"
             height="293"
@@ -499,11 +490,8 @@
           </div>
           <img
             class="characters-img"
-            src="/stp-8885/assets/Group 18@1x-59adeea3.png"
-            srcset="
-            /img/characters/Group 18@1x.png 1x,
-            /img/characters/Group 18@2x.png 2x
-          "
+            src="/stp-8885/assets/group18@1x-59adeea3.png"
+            srcset="/stp-8885/assets/group18@1x-59adeea3.png 1x, /stp-8885/assets/group18@1x-59adeea3.png 2x"
             alt="Sir Toadrick"
             width="157"
             height="278"
@@ -518,11 +506,8 @@
           </div>
           <img
             class="characters-img"
-            src="/stp-8885/assets/Group 17@1x-ead1aa44.png"
-            srcset="
-            /img/characters/Group 17@1x.png 1x,
-            /img/characters/Group 17@2x.png 2x
-          "
+            src="/stp-8885/assets/group17@1x-ead1aa44.png"
+            srcset="/stp-8885/assets/group17@1x-ead1aa44.png 1x, /stp-8885/assets/group17@1x-ead1aa44.png 2x"
             alt="Zapster"
             width="256.71"
             height="262"
