@@ -193,3 +193,9 @@
     background-image: url('/img/game-atmosphere/awards-set@2x.png');
   }
 }
+
+.basicLightbox--visible img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
