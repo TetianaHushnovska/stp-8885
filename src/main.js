@@ -1,5 +1,6 @@
 import './js/burgerMenu';
 import './scss/styles.scss';
+import './js/scroll';
 import './js/cookies';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,4 +12,3 @@ initSwiper();
 initFaq();
 InitReview();
 AOS.init();
-
