@@ -64,7 +64,6 @@
   height: 380px;
 
   @media screen and (min-width: 1200px) {
-    gap: 20px;
     height: 400px;
   }
 }
@@ -87,6 +86,29 @@
     height: 77px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .characters-text-container.twinkleblade {
+    margin-bottom: 29px;
+  }
+
+  .characters-text-container.snorella {
+    margin-bottom: 0;
+  }
+
+  .characters-text-container.grillbert {
+    margin-bottom: 21px;
+  }
+
+  .characters-text-container.toadrick {
+    margin-bottom: 27px;
+  }
+
+  .characters-text-container.zapster {
+    margin-bottom: 45px;
+  }
+}
+
 .characters-item-title {
   font-weight: 600;
   font-size: 20px;
