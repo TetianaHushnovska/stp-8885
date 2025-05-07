@@ -35,12 +35,12 @@
 }
 
 .game-atm-text {
-  padding: 0 10px;
+  padding: 0 14.5px;
   text-align: center;
   margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {
-    padding: 0 220px;
+    padding: 0 240px;
     margin-bottom: 30px;
   }
 }
@@ -97,7 +97,6 @@
   align-items: center;
   outline: hidden;
   transition: all 0.3s ease;
-  background-color: transparent;
 }
 
 .btn-prev:hover,
@@ -120,35 +119,24 @@
 }
 
 .atm-add-text {
-  width: 268px;
+  padding: 0 2px;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.023em;
   margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {
-    width: 1040px;
     padding: 0 150px;
     margin-bottom: 30px;
   }
 }
 
-.highlighted {
-  width: 320px;
-  height: 246px;
-  background-color: #6d12d8;
-  margin: 0 auto;
-  border-radius: 10px;
-  margin-bottom: 26px;
-
-  @media screen and (min-width: 1200px) {
-    width: 1040px;
-    height: 127px;
-    margin-bottom: 4px;
-  }
-}
-
 .text-highlighted {
-  width: 320px;
+  width: 100vw;
+  height: 246px;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 26px;
+  background-color: #6d12d8;
+  border-radius: 10px;
   text-align: center;
   font-family: var(--font-tittle);
   font-size: 24px;
@@ -192,10 +180,4 @@
   .atm-sign {
     background-image: url('/img/game-atmosphere/awards-set@2x.png');
   }
-}
-
-.basicLightbox--visible img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
 }
