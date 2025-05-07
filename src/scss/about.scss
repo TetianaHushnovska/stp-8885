@@ -117,19 +117,24 @@
   justify-content: center;
   gap: 19.8px;
   margin-bottom: 20px;
+  width: 320px;
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     align-items: flex-start;
+    width: 1200px;
+    justify-content: flex-start;
   }
 }
 .about-img-two {
   width: 320px;
   height: 123.2px;
+  margin-left: -24px;
 
   @media screen and (min-width: 1200px) {
     width: 670px;
     height: 258px;
+    margin-left: 0;
   }
 }
 .about-text-two {
@@ -139,6 +144,7 @@
   width: 272px;
   height: 115px;
   text-align: center;
+  margin-left: -44px;
 
   @media screen and (min-width: 1200px) {
     font-size: 25px;
@@ -146,6 +152,7 @@
     letter-spacing: 0.01em;
     width: 349px;
     height: 210px;
+    margin-left: 0;
   }
 }
 

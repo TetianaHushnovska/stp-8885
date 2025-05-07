@@ -4,21 +4,33 @@ const burgerMenuEl = document.querySelector('[data-visible]');
 const modalLinks = document.querySelectorAll('[data-goto]');
 
 openBtnEl.addEventListener('click', () => {
-  burgerMenuEl.dataset.visible = 'open';
+  burgerMenuEl.style.display = 'flex';
+  burgerMenuEl.setAttribute('data-visible', 'close');
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      burgerMenuEl.setAttribute('data-visible', 'open');
+    });
+  });
+
   document.body.style.overflow = 'hidden';
 });
 
-closeBtnEl.addEventListener('click', () => {
-  burgerMenuEl.dataset.visible = 'close';
+function closeModal() {
+  burgerMenuEl.setAttribute('data-visible', 'closing');
   document.body.style.overflow = '';
-});
+
+  setTimeout(() => {
+    burgerMenuEl.setAttribute('data-visible', 'close');
+    burgerMenuEl.style.display = 'none';
+  }, 600);
+}
+
+closeBtnEl.addEventListener('click', closeModal);
 
 modalLinks.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
-
-    burgerMenuEl.dataset.visible = 'close';
-    document.body.style.overflow = '';
 
     const targetId = link.getAttribute('href');
     const targetElement = document.querySelector(targetId);
@@ -26,5 +38,7 @@ modalLinks.forEach(link => {
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
+
+    closeModal();
   });
 });
