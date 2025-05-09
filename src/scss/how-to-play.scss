@@ -1,5 +1,11 @@
 /* #region how-to-play */
 
+.play {
+  @media screen and (min-width: 1200px) {
+    padding-top: 28px;
+  }
+}
+
 .play-title {
   font-weight: 400;
   font-size: 25px;

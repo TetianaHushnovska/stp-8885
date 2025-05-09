@@ -1,3 +1,9 @@
+.characters {
+  @media screen and (min-width: 1200px) {
+    padding-top: 28px;
+  }
+}
+
 .characters-title {
   font-weight: 400;
   font-size: 25px;

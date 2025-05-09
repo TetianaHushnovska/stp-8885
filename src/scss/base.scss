@@ -29,27 +29,6 @@ h2 {
   font-family: var(--font-tittle);
 }
 
-#about,
-#play,
-#features,
-#characters,
-#atmosphere,
-#reviews,
-#faq {
-  padding-top: 50px;
-}
-@media only screen and (min-width: 1200px) {
-  #about,
-  #play,
-  #features,
-  #characters,
-  #atmosphere,
-  #reviews,
-  #faq {
-    padding-top: 100px;
-  }
-}
-
 .container {
   width: 320px;
   padding: 0 24px;

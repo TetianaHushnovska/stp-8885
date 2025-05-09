@@ -12,3 +12,23 @@ initSwiper();
 initFaq();
 InitReview();
 AOS.init();
+
+document.addEventListener('click', function (e) {
+  const link = e.target.closest('a[href^="#"]');
+  if (!link) return;
+
+  const targetId = link.getAttribute('href');
+  if (targetId.length < 2) return;
+
+  const targetEl = document.querySelector(targetId);
+  if (!targetEl) return;
+
+  e.preventDefault();
+
+  const elementTop = targetEl.getBoundingClientRect().top + window.scrollY;
+  const offset = window.innerHeight / 4;
+  window.scrollTo({
+    top: elementTop - offset,
+    behavior: 'smooth',
+  });
+});

@@ -1,5 +1,13 @@
 /* #region about */
 
+.about {
+  padding-top: 50px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+  }
+}
+
 .about-title {
   font-weight: 400;
   font-size: 25px;
